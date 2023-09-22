@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('./aboutUs.jpg');
+    background-color: rgba(255, 255, 255, 0.002);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This ensures that the background stays fixed while scrolling */
+    background-position: center center;
+}
+
+#page{
+    text-align: center;
+    justify-content: center;
+}
+
+#page h1{
+    display: inline;
+    font-size: 48px;
+    font-weight: 700;
+    color: orange;
+    letter-spacing: 2px;
+}
+
+
+#page #aboutUs p{
+    color: white;
+    margin-top: 5px;
+    font-size: 1.11rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#Mission{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+    margin-top: 15px;
+}
+
+#Mission h2{
+    color: cyan;
+    display: inline;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    border-bottom: 2px solid cyan;
+}
+
+#Mission p{
+    margin-top: 7px;
+    font-size: 1.4rem;
+}
+
+.container1{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+}
+
+.box1{
+    width: 400px;
+    margin: 0px 5px;
+    background-color: #5661d51f;
+    color: white;
+    padding: 2px;
+}
+
+.box1 h3{
+    color: lightblue;
+    display: inline;
+    letter-spacing: 1px;
+    border-bottom: 2px solid lightblue;
+    font-size: 2rem;
+}
+
+.box1 p{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+h4{
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+    background-color: transparent;
+}
+
+.JoinUs{
+    margin-top: 15px;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #2e294e;
+}
+
+#logos>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #2e294e;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#logos>u>li{
+    padding: 0 10%;
+}
