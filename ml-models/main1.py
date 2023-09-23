@@ -17,17 +17,17 @@ while i<=30:
     for x,y,w,h in faces:
         cv2.rectangle(frame,(x,y),(x+w,y+h), (0,255,0),2)
     font=cv2.FONT_HERSHEY_SIMPLEX
-    if (result["dominant_emotion"] not in d):
-        d[result["dominant_emotion"]]=1
-    else:
-        d[result["dominant_emotion"]]+=1
-    #cv2.putText(frame,result['dominant_emotion'],(10,10),font,1,(0,255,255),2)
+    cv2.putText(frame,result['dominant_emotion'],(10,10),font,1,(0,255,255),2)
     cv2.imshow("Emotion Detection", frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-    pickle.dump(result,open("facemodel.pkl","wb"))
-    model=pickle.load(open("facemodel.pkl","rb"))
+    if result["dominant_emotion"] not in d:
+        d[result["dominant_emotion"]]=1
+    else:
+        d[result["dominant_emotion"]]+=1
     i+=1
-print("emotion is",max(d))    
+key_with_max_value = max(d, key=d.get)
+print(key_with_max_value,"is the major emotion")
+    
 cap.release()
 cv2.destroyAllWindows()
